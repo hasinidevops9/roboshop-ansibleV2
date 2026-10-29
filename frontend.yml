@@ -53,9 +53,9 @@
     #     path: /usr/share/nginx/html/
     #     state: directory
         
-    - name: copying frontend complied code
+    - name: copying frontend compiled code
       ansible.builtin.copy:
-        src: /tmp/frontend/out
+        src: /tmp/frontend/out/
         dest: /usr/share/nginx/html/
         remote_src: true
 
