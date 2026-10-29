@@ -39,7 +39,7 @@
     - name: compile code
       ansible.builtin.shell: |
         npm install
-        npm run built
+        npm run build
       args:
         chdir: /tmp/frontend
 
