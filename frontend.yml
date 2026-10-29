@@ -51,7 +51,7 @@
     #     state: directory
         
     - name: copying frontend complied code
-      ansible.buitin.copy:
+      ansible.builtin.copy:
         src: /tmp/frontend/out
         dest: /usr/share/nginx/html/
         remote_src: true
