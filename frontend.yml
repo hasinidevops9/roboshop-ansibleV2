@@ -9,9 +9,9 @@
 
     - name: copying nginx configuration
       ansible.builtin.copy:
-        src: nginx.conf
-        dest: /etc/nginx/nginx.conf 
-    
+        src: nginx-practice.conf
+        dest: /etc/nginx/nginx.conf
+        
     - name: Configuring nodejs repos
       ansible.builtin.shell: curl -fsSL https://rpm.nodesource.com/setup_20.x | bash
 
